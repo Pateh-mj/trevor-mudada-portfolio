@@ -1,0 +1,104 @@
+.training__groups {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Group header */
+.training__group-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 2px solid #dde3ed;
+}
+
+.training__group-icon {
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+.training__group-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0f1c2e;
+  letter-spacing: -0.2px;
+}
+
+/* Cards grid */
+.training__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.training__card {
+  display: flex;
+  gap: 1.2rem;
+  align-items: flex-start;
+  background: #ffffff;
+  border: 1px solid #dde3ed;
+  border-left: 4px solid #1a56db;
+  border-radius: 8px;
+  padding: 1.2rem 1.4rem;
+  transition: box-shadow 0.2s;
+}
+
+.training__card:hover {
+  box-shadow: 0 4px 16px rgba(15, 28, 46, 0.07);
+}
+
+.training__card-left {
+  flex-shrink: 0;
+}
+
+.training__year {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #1a56db;
+  background: #eff4ff;
+  padding: 0.25rem 0.55rem;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.training__card-right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.training__cert-title {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #0f1c2e;
+  line-height: 1.4;
+}
+
+.training__issuer {
+  font-size: 0.82rem;
+  color: #94a3b8;
+  line-height: 1.4;
+}
+
+.training__verify-link {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #1a56db;
+  text-decoration: none;
+  margin-top: 0.3rem;
+  transition: color 0.2s;
+}
+
+.training__verify-link:hover {
+  color: #1e3fa8;
+}
+
+@media (max-width: 640px) {
+  .training__cards {
+    grid-template-columns: 1fr;
+  }
+}
