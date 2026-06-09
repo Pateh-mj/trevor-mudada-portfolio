@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --navy:       #0f1c2e;
+  --navy-light: #1a2e47;
+  --blue:       #1a56db;
+  --blue-dark:  #1e3fa8;
+  --white:      #ffffff;
+  --light:      #f4f7fb;
+  --border:     #dde3ed;
+  --text:       #2d3748;
+  --muted:      #64748b;
+  --header-h:   70px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background: var(--white);
+  color: var(--text);
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
 }
 
-.App-header {
-  background-color: #282c34;
+.app {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.section {
+  padding: 96px 5%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.section--alt {
+  background: var(--light);
+}
+
+.section__label {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--blue);
+  margin-bottom: 0.6rem;
+}
+
+.section__title {
+  font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+  font-weight: 800;
+  color: var(--navy);
+  letter-spacing: -0.5px;
+  margin-bottom: 1rem;
+}
+
+.section__divider {
+  width: 48px;
+  height: 4px;
+  background: var(--blue);
+  border-radius: 2px;
+  margin-bottom: 2.8rem;
+}
+
+.section__inner {
+  max-width: 1080px;
+  margin: 0 auto;
 }
