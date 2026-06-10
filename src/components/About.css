@@ -1,6 +1,6 @@
 .about__grid {
   display: grid;
-  grid-template-columns: 1fr 300px;
+  grid-template-columns: 1fr 420px;
   gap: 4rem;
   align-items: start;
 }
@@ -14,10 +14,25 @@
 .about__text p {
   font-size: 1rem;
   line-height: 1.85;
-  color: #475569;
+  color: #000000;
+  text-align: justify;
 }
 
-/* Competencies */
+/* Competencies — slide in from right */
+.about__competencies {
+  transform: translateX(60px);
+  opacity: 0;
+  transition: transform 0.65s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.65s ease;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.about__competencies.is-visible {
+  transform: translateX(0);
+  opacity: 1;
+}
+
 .about__comp-title {
   font-size: 0.8rem;
   font-weight: 700;
@@ -31,18 +46,19 @@
 
 .about__comp-list {
   list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 0.65rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.55rem 1rem;
 }
 
 .about__comp-item {
   display: flex;
-  align-items: center;
-  gap: 0.7rem;
-  font-size: 0.9rem;
-  color: #374151;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  color: #070707;
   font-weight: 500;
+  line-height: 1.4;
 }
 
 .about__comp-dot {

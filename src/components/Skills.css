@@ -54,7 +54,7 @@
 
 .skills__tool-desc {
   font-size: 0.88rem;
-  color: #64748b;
+  color: #030303;
   line-height: 1.6;
 }
 
@@ -70,7 +70,7 @@
   align-items: center;
   gap: 0.65rem;
   font-size: 0.9rem;
-  color: #374151;
+  color: #000000;
   font-weight: 500;
   background: #ffffff;
   border: 1px solid #dde3ed;

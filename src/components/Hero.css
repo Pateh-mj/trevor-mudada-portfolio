@@ -46,7 +46,7 @@
 .hero__bio {
   font-size: 1.05rem;
   line-height: 1.8;
-  color: #475569;
+  color: #000000;
   max-width: 540px;
   margin-bottom: 2.4rem;
 }
@@ -192,7 +192,7 @@
 
 .hero__stat-lbl {
   font-size: 0.78rem;
-  color: #94a3b8;
+  color: #c6d0dd;
   max-width: 160px;
   line-height: 1.4;
 }

@@ -29,23 +29,23 @@ const projects = [
     category: 'Data Analytics',
     title: 'Health Operations Dashboard',
     description:
-      'Placeholder — designed and implemented a Power BI reporting dashboard to monitor facility KPIs, patient flow metrics, and service efficiency across multiple health units.',
+      'Designed and implemented a Power BI reporting dashboard to monitor facility KPIs, patient flow metrics, and service efficiency across multiple health units.',
     tags: ['Power BI', 'Data Reporting', 'KPIs', 'Facility Management'],
     link: null,
   },
   {
     category: 'Quality Assurance',
-    title: 'Patient Flow Optimisation Programme',
+    title: 'Regulatory Compliance and Audits',
     description:
-      'Placeholder — led a quality improvement initiative to streamline patient intake, triage, and discharge processes, resulting in measurable reductions in average wait times.',
-    tags: ['QA', 'Process Improvement', 'Patient Flow', 'SOP Development'],
+      'Supported audits, strengthened administrative processes, and contributed to improving institutional compliance levels from 23% to 78%.',
+    tags: ['QA', 'Process Improvement', 'SOP Development'],
     link: null,
   },
   {
     category: 'Research',
     title: 'Epidemiological Field Study',
     description:
-      'Placeholder — conducted a community-level epidemiological survey to assess disease burden and risk factors, applying STATA and R for analysis and reporting.',
+      'Conducted a community-level epidemiological survey to assess disease burden and risk factors, applying STATA and R for analysis and reporting.',
     tags: ['R Programming', 'STATA', 'Field Research', 'Biostatistics'],
     link: null,
   },

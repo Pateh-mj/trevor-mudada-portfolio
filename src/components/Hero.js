@@ -19,8 +19,8 @@ export default function Hero() {
 
           <p className="hero__bio">
             Bridging frontline health operations with rigorous epidemiological research.
-            With over 3 years of experience across health and corporate environments —
-            and a contribution to a WHO-supported national study — I translate complex
+            With over 3 years of experience across health and corporate environments
+            and a contribution to a WHO-supported national study. I translate complex
             data into decisions that improve systems, patient outcomes, and organisational performance.
           </p>
 
@@ -45,8 +45,9 @@ export default function Hero() {
       <div className="hero__stats">
         <div className="section__inner hero__stats-inner">
           {[
-            { value: '3+',    label: 'Years in Health & Operations' },
+            { value: '4+',    label: 'Years in Health & Operations' },
             { value: 'WHO',   label: 'Published Research Contributor' },
+            { value: 'M&E',   label: 'Program Planning, Monitoring and Evaluation' },
             { value: '6+',    label: 'Data & Analytics Tools' },
             { value: 'MBA',   label: '+ MSc Epidemiology (In Progress)' },
           ].map(({ value, label }) => (

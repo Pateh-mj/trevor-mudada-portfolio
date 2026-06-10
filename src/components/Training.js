@@ -1,9 +1,10 @@
+import { HeartPulse, BarChart3, Briefcase, ExternalLink, Award } from 'lucide-react';
 import './Training.css';
 
 const categories = [
   {
     group: 'Health & Epidemiology',
-    icon: '🏥',
+    Icon: HeartPulse,
     items: [
       {
         title: 'Applied Epidemiology & Outbreak Investigation',
@@ -33,7 +34,7 @@ const categories = [
   },
   {
     group: 'Data, Analytics & Research',
-    icon: '📊',
+    Icon: BarChart3,
     items: [
       {
         title: 'Data Analysis with STATA',
@@ -63,7 +64,7 @@ const categories = [
   },
   {
     group: 'Management & Leadership',
-    icon: '💼',
+    Icon: Briefcase,
     items: [
       {
         title: 'Branch Operations & Compliance Management',
@@ -102,32 +103,36 @@ export default function Training() {
         <div className="section__divider" />
 
         <div className="training__groups">
-          {categories.map(({ group, icon, items }) => (
+          {categories.map(({ group, Icon, items }) => (
             <div className="training__group" key={group}>
+
               <div className="training__group-header">
-                <span className="training__group-icon">{icon}</span>
+                <div className="training__group-icon-wrap">
+                  <Icon size={20} strokeWidth={2} />
+                </div>
                 <h3 className="training__group-title">{group}</h3>
+                <span className="training__group-count">{items.length} certificates</span>
               </div>
+
               <div className="training__cards">
                 {items.map(({ title, issuer, year, credentialLink }) => (
                   <div className="training__card" key={title}>
-                    <div className="training__card-left">
+                    <div className="training__card-header">
+                      <Award size={16} strokeWidth={2} className="training__award-icon" />
                       <span className="training__year">{year}</span>
                     </div>
-                    <div className="training__card-right">
-                      <p className="training__cert-title">{title}</p>
-                      <p className="training__issuer">{issuer}</p>
-                      {credentialLink && (
-                        <a
-                          href={credentialLink}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="training__verify-link"
-                        >
-                          View Certificate →
-                        </a>
-                      )}
-                    </div>
+                    <p className="training__cert-title">{title}</p>
+                    <p className="training__issuer">{issuer}</p>
+                    {credentialLink && (
+                      <a
+                        href={credentialLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="training__verify-link"
+                      >
+                        View Certificate <ExternalLink size={12} />
+                      </a>
+                    )}
                   </div>
                 ))}
               </div>

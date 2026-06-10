@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Experience from './components/Experience';
 import Research from './components/Research';
+import ParallaxBanner from './components/ParallaxBanner';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Training from './components/Training';
@@ -20,6 +21,7 @@ function App() {
         <About />
         <Experience />
         <Research />
+        <ParallaxBanner />
         <Skills />
         <Projects />
         <Training />

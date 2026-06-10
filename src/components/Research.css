@@ -60,7 +60,7 @@
 .research__desc {
   font-size: 0.97rem;
   line-height: 1.8;
-  color: #475569;
+  color: #000000;
   margin-bottom: 1.5rem;
   max-width: 640px;
 }
@@ -104,7 +104,7 @@
 .research__foundation p {
   font-size: 0.97rem;
   line-height: 1.8;
-  color: #475569;
+  color: #000000;
 }
 
 @media (max-width: 680px) {

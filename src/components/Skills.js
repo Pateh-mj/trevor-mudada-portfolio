@@ -10,11 +10,9 @@ const tools = [
 ];
 
 const operational = [
-  'Facility Management',
   'Operational Coordination',
   'Quality Assurance',
   'Workflow Optimisation',
-  'Patient Flow Management',
   'Service Efficiency',
   'Stakeholder Engagement',
   'Data Reporting',

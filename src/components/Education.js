@@ -2,10 +2,10 @@ import './Education.css';
 
 const degrees = [
   {
-    degree: 'Master of Business Administration (MBA)',
+    degree: 'Master of Data Science',
     institution: 'In Progress',
     status: 'Currently Pursuing',
-    focus: 'Business strategy, governance, institutional management, and leadership',
+    focus: 'AI and Machine Learning, Statistical Modelling, Data Visualisation, and Scalable Data Solutions',
   },
   {
     degree: "Master's in Epidemiology and Biostatistics",
